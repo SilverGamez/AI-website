@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>MTS A.I</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Removedbglogo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>MTS A.I</A></h1>
+            <p1>Innovate your future.</p1>
+            <div class="banner-button">
+                <a href="./about.html"><span></span>About Us</a>
+                <a href="./readmore.html"><span></span>Read more</a>
+            </div>
+    </section>
+
+    <img src="./assets/logo.jpg" class="logo">
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./chatbot.html">Chatbot</a></li>
+                <li><a href="#">Image Customization</a></li>
+                <li><a href="#">Paraphraser</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="./assets/menuicon.png" id="menu">
+    </div>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+
+        sidenav.style.right = "-250px";
+
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+                menubtn.style.right = "255px";
+                menu.src = "./assets/close.png";
+            } else {
+                sidenav.style.right = "-250px";
+                menubtn.style.right = "10px";
+                menu.src = "./assets/menuicon.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>MTS A.I</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Removedbglogo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>About Us</A></h1>
+            <p>MTS AI is an innovative group made for the sole reason of making technology better. We focus mainly on ai and have a cad/cam tool that is made to use ai to help you make and polish up construction plans. We also have a variety of state of the art ai tools to help with many different things even one that can help with increasing fps in a low quality computer. To learn more about our products click on the designated tabs and there will be an indepth explanation of each one and how to use them properly.</p>
+    </section>
+
+    <img src="./assets/logo.jpg" class="logo">
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Chatbot</a></li>
+                <li><a href="#">Image Customization</a></li>
+                <li><a href="#">Paraphraser</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="./assets/menuicon.png" id="menu">
+    </div>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+
+        sidenav.style.right = "-250px";
+
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+                menubtn.style.right = "255px";
+                menu.src = "./assets/close.png";
+            } else {
+                sidenav.style.right = "-250px";
+                menubtn.style.right = "10px";
+                menu.src = "./assets/menuicon.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
